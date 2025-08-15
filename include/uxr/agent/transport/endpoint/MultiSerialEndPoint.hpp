@@ -55,4 +55,9 @@ private:
 } // namespace uxr
 } // namespace eprosima
 
+#ifdef UAGENT_LOGGER_PROFILE
+#include <spdlog/fmt/bundled/ostream.h>
+template <> struct fmt::formatter<eprosima::uxr::MultiSerialEndPoint> : ostream_formatter {};
+#endif
+
 #endif //_UXR_AGENT_TRANSPORT_SERIAL_ENDPOINT_HPP_

@@ -931,18 +931,6 @@ void dds::xrce::TransportAddress::deserialize(eprosima::fastcdr::Cdr &dcdr)
     }
 }
 
-
-
-dds::xrce::Property::Property()
-{
-
-
-}
-
-dds::xrce::Property::~Property()
-{
-}
-
 dds::xrce::Property::Property(const Property &x)
 {
     m_name = x.m_name;

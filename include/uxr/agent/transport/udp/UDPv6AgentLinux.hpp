@@ -31,14 +31,14 @@ namespace uxr {
 
 extern template class Server<IPv6EndPoint>; // Explicit instantiation declaration.
 
-class UDPv6Agent : public Server<IPv6EndPoint>
+class UDPv6Agent final : public Server<IPv6EndPoint>
 {
 public:
     UDPv6Agent(
             uint16_t port,
             Middleware::Kind middleware_kind);
 
-    ~UDPv6Agent() final;
+    ~UDPv6Agent();
 
 #ifdef UAGENT_DISCOVERY_PROFILE
     bool has_discovery() final { return true; }

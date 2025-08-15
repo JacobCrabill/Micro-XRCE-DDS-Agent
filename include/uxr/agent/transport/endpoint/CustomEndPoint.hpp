@@ -231,7 +231,7 @@ public:
     }
 
     /**
-     * 
+     *
      */
     void check_non_empty_members()
     {
@@ -503,5 +503,10 @@ inline bool CustomEndPoint::add_member<std::string>(
 
 } // namespace uxr
 } // namespace eprosima
+
+#ifdef UAGENT_LOGGER_PROFILE
+#include <spdlog/fmt/bundled/ostream.h>
+template <> struct fmt::formatter<eprosima::uxr::CustomEndPoint> : ostream_formatter {};
+#endif
 
 #endif // UXR_AGENT_TRANSPORT_ENDPOINT_IPV4_ENDPOINT_HPP_

@@ -178,4 +178,9 @@ bool SessionManager<EndPoint>::get_endpoint(
 } // namespace uxr
 } // namespace eprosima
 
+#ifdef UAGENT_LOGGER_PROFILE
+#include <spdlog/fmt/bundled/ostream.h>
+template <typename EndPoint> struct fmt::formatter<eprosima::uxr::SessionManager<EndPoint>> : ostream_formatter {};
+#endif
+
 #endif // UXR_AGENT_TRANSPORT_SESSIONMANAGER_HPP_

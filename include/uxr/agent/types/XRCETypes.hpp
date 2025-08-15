@@ -112,36 +112,36 @@ public:
      * @brief Default constructor.
      */
     Time_t();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~Time_t();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object Time_t that will be copied.
      */
     Time_t(const Time_t &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object Time_t that will be copied.
      */
     Time_t(Time_t &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object Time_t that will be copied.
      */
     Time_t& operator=(const Time_t &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object Time_t that will be copied.
      */
     Time_t& operator=(Time_t &&x);
-    
+
     /*!
      * @brief This function sets a value in member seconds
      * @param _seconds New value for member seconds
@@ -194,7 +194,7 @@ public:
     {
         return m_nanoseconds;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -264,36 +264,36 @@ public:
      * @brief Default constructor.
      */
     TransportAddressSmall();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~TransportAddressSmall();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object TransportAddressSmall that will be copied.
      */
     TransportAddressSmall(const TransportAddressSmall &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object TransportAddressSmall that will be copied.
      */
     TransportAddressSmall(TransportAddressSmall &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object TransportAddressSmall that will be copied.
      */
     TransportAddressSmall& operator=(const TransportAddressSmall &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object TransportAddressSmall that will be copied.
      */
     TransportAddressSmall& operator=(TransportAddressSmall &&x);
-    
+
     /*!
      * @brief This function copies the value in member address
      * @param _address New value to be copied in member address
@@ -355,7 +355,7 @@ public:
     {
         return m_port;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -384,7 +384,7 @@ public:
      * @param cdr CDR serialization object.
      */
     virtual void deserialize(eprosima::fastcdr::Cdr &cdr);
-    
+
 private:
     std::array<uint8_t, 2> m_address;
     uint8_t m_port;
@@ -401,36 +401,36 @@ public:
      * @brief Default constructor.
      */
     TransportAddressMedium();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~TransportAddressMedium();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object TransportAddressMedium that will be copied.
      */
     TransportAddressMedium(const TransportAddressMedium &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object TransportAddressMedium that will be copied.
      */
     TransportAddressMedium(TransportAddressMedium &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object TransportAddressMedium that will be copied.
      */
     TransportAddressMedium& operator=(const TransportAddressMedium &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object TransportAddressMedium that will be copied.
      */
     TransportAddressMedium& operator=(TransportAddressMedium &&x);
-    
+
     /*!
      * @brief This function copies the value in member address
      * @param _address New value to be copied in member address
@@ -492,7 +492,7 @@ public:
     {
         return m_port;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -538,36 +538,36 @@ public:
      * @brief Default constructor.
      */
     TransportAddressLarge();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~TransportAddressLarge();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object TransportAddressLarge that will be copied.
      */
     TransportAddressLarge(const TransportAddressLarge &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object TransportAddressLarge that will be copied.
      */
     TransportAddressLarge(TransportAddressLarge &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object TransportAddressLarge that will be copied.
      */
     TransportAddressLarge& operator=(const TransportAddressLarge &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object TransportAddressLarge that will be copied.
      */
     TransportAddressLarge& operator=(TransportAddressLarge &&x);
-    
+
     /*!
      * @brief This function copies the value in member address
      * @param _address New value to be copied in member address
@@ -629,7 +629,7 @@ public:
     {
         return m_port;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -658,7 +658,7 @@ public:
      * @param cdr CDR serialization object.
      */
     virtual void deserialize(eprosima::fastcdr::Cdr &cdr);
-    
+
 private:
     std::array<uint8_t, 16> m_address;
     uint32_t m_port;
@@ -675,36 +675,36 @@ public:
      * @brief Default constructor.
      */
     TransportAddressString();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~TransportAddressString();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object TransportAddressString that will be copied.
      */
     TransportAddressString(const TransportAddressString &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object TransportAddressString that will be copied.
      */
     TransportAddressString(TransportAddressString &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object TransportAddressString that will be copied.
      */
     TransportAddressString& operator=(const TransportAddressString &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object TransportAddressString that will be copied.
      */
     TransportAddressString& operator=(TransportAddressString &&x);
-    
+
     /*!
      * @brief This function copies the value in member value
      * @param _value New value to be copied in member value
@@ -740,7 +740,7 @@ public:
     {
         return m_value;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -777,7 +777,7 @@ private:
  * @brief This class represents the union TransportAddress defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class TransportAddress
+class TransportAddress final
 {
 public:
 
@@ -785,55 +785,55 @@ public:
      * @brief Default constructor.
      */
     TransportAddress();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~TransportAddress();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object TransportAddress that will be copied.
      */
     TransportAddress(const TransportAddress &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object TransportAddress that will be copied.
      */
     TransportAddress(TransportAddress &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object TransportAddress that will be copied.
      */
     TransportAddress& operator=(const TransportAddress &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object TransportAddress that will be copied.
      */
     TransportAddress& operator=(TransportAddress &&x);
-    
+
     /*!
      * @brief This function sets the discriminator value.
      * @param __d New value for the discriminator.
      * @exception dds::xrce::XRCETypesException This exception is thrown if the new value doesn't correspond to the selected union member.
      */
     void _d(TransportAddressFormat __d);
-    
+
     /*!
      * @brief This function returns the value of the discriminator.
      * @return Value of the discriminator
      */
     TransportAddressFormat _d() const;
-    
+
     /*!
      * @brief This function returns a reference to the discriminator.
      * @return Reference to the discriminator.
      */
     TransportAddressFormat& _d();
-    
+
     /*!
      * @brief This function copies the value in member small_locator
      * @param _small_locator New value to be copied in member small_locator
@@ -934,7 +934,7 @@ public:
      * @exception dds::xrce::XRCETypesException This exception is thrown if the requested union member is not the current selection.
      */
     TransportAddressString& string_locator();
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -962,7 +962,7 @@ public:
      * @param cdr CDR serialization object.
      */
     virtual void deserialize(eprosima::fastcdr::Cdr &cdr);
-    
+
     /*!
      * @brief This function formats the IP address and port to ostream, for logging purpuses.
      * @param os ostream object.
@@ -1009,13 +1009,13 @@ public:
                 << address.large_locator().port();
             default:
                 break;
-        } 
+        }
         return os;
     }
 
 private:
     TransportAddressFormat m__d;
-    
+
     TransportAddressSmall m_small_locator;
     TransportAddressMedium m_medium_locator;
     TransportAddressLarge m_large_locator;
@@ -1028,44 +1028,44 @@ typedef std::vector<TransportAddress> TransportAddressSeq;
  * @brief This class represents the structure Property defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class Property
+class Property final
 {
 public:
 
     /*!
      * @brief Default constructor.
      */
-    Property();
-    
+    Property() = default;
+
     /*!
      * @brief Default destructor.
      */
-    ~Property();
-    
+    ~Property() = default;
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object Property that will be copied.
      */
     Property(const Property &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object Property that will be copied.
      */
     Property(Property &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object Property that will be copied.
      */
     Property& operator=(const Property &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object Property that will be copied.
      */
     Property& operator=(Property &&x);
-    
+
     /*!
      * @brief This function copies the value in member name
      * @param _name New value to be copied in member name
@@ -1136,7 +1136,7 @@ public:
     {
         return m_value;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -1185,36 +1185,36 @@ public:
      * @brief Default constructor.
      */
     CLIENT_Representation();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~CLIENT_Representation();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object CLIENT_Representation that will be copied.
      */
     CLIENT_Representation(const CLIENT_Representation &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object CLIENT_Representation that will be copied.
      */
     CLIENT_Representation(CLIENT_Representation &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object CLIENT_Representation that will be copied.
      */
     CLIENT_Representation& operator=(const CLIENT_Representation &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object CLIENT_Representation that will be copied.
      */
     CLIENT_Representation& operator=(CLIENT_Representation &&x);
-    
+
     /*!
      * @brief This function copies the value in member xrce_cookie
      * @param _xrce_cookie New value to be copied in member xrce_cookie
@@ -1465,7 +1465,7 @@ public:
      * @param cdr CDR serialization object.
      */
     virtual void deserialize(eprosima::fastcdr::Cdr &cdr);
-    
+
 private:
     XrceCookie m_xrce_cookie;
     XrceVersion m_xrce_version;
@@ -1488,36 +1488,36 @@ public:
      * @brief Default constructor.
      */
     AGENT_Representation();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~AGENT_Representation();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object AGENT_Representation that will be copied.
      */
     AGENT_Representation(const AGENT_Representation &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object AGENT_Representation that will be copied.
      */
     AGENT_Representation(AGENT_Representation &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object AGENT_Representation that will be copied.
      */
     AGENT_Representation& operator=(const AGENT_Representation &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object AGENT_Representation that will be copied.
      */
     AGENT_Representation& operator=(AGENT_Representation &&x);
-    
+
     /*!
      * @brief This function copies the value in member xrce_cookie
      * @param _xrce_cookie New value to be copied in member xrce_cookie
@@ -1706,55 +1706,55 @@ public:
      * @brief Default constructor.
      */
     OBJK_Representation3Formats();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_Representation3Formats();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_Representation3Formats that will be copied.
      */
     OBJK_Representation3Formats(const OBJK_Representation3Formats &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_Representation3Formats that will be copied.
      */
     OBJK_Representation3Formats(OBJK_Representation3Formats &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_Representation3Formats that will be copied.
      */
     OBJK_Representation3Formats& operator=(const OBJK_Representation3Formats &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_Representation3Formats that will be copied.
      */
     OBJK_Representation3Formats& operator=(OBJK_Representation3Formats &&x);
-    
+
     /*!
      * @brief This function sets the discriminator value.
      * @param __d New value for the discriminator.
      * @exception dds::xrce::XRCETypesException This exception is thrown if the new value doesn't correspond to the selected union member.
      */
     void _d(RepresentationFormat __d);
-    
+
     /*!
      * @brief This function returns the value of the discriminator.
      * @return Value of the discriminator
      */
     RepresentationFormat _d() const;
-    
+
     /*!
      * @brief This function returns a reference to the discriminator.
      * @return Reference to the discriminator.
      */
     RepresentationFormat& _d();
-    
+
     /*!
      * @brief This function copies the value in member object_reference
      * @param _object_reference New value to be copied in member object_reference
@@ -1832,7 +1832,7 @@ public:
      * @exception dds::xrce::XRCETypesException This exception is thrown if the requested union member is not the current selection.
      */
     std::vector<uint8_t>& binary_representation();
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -1860,10 +1860,10 @@ public:
      * @param cdr CDR serialization object.
      */
     virtual void deserialize(eprosima::fastcdr::Cdr &cdr);
-    
+
 private:
     RepresentationFormat m__d;
-    
+
     std::string m_object_reference;
     std::string m_xml_string_representation;
     std::vector<uint8_t> m_binary_representation;
@@ -2437,36 +2437,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_Representation3_Base();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_Representation3_Base();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_Representation3_Base that will be copied.
      */
     OBJK_Representation3_Base(const OBJK_Representation3_Base &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_Representation3_Base that will be copied.
      */
     OBJK_Representation3_Base(OBJK_Representation3_Base &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_Representation3_Base that will be copied.
      */
     OBJK_Representation3_Base& operator=(const OBJK_Representation3_Base &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_Representation3_Base that will be copied.
      */
     OBJK_Representation3_Base& operator=(OBJK_Representation3_Base &&x);
-    
+
     /*!
      * @brief This function copies the value in member representation
      * @param _representation New value to be copied in member representation
@@ -2566,36 +2566,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_QOSPROFILE_Representation();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_QOSPROFILE_Representation();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_QOSPROFILE_Representation that will be copied.
      */
     OBJK_QOSPROFILE_Representation(const OBJK_QOSPROFILE_Representation &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_QOSPROFILE_Representation that will be copied.
      */
     OBJK_QOSPROFILE_Representation(OBJK_QOSPROFILE_Representation &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_QOSPROFILE_Representation that will be copied.
      */
     OBJK_QOSPROFILE_Representation& operator=(const OBJK_QOSPROFILE_Representation &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_QOSPROFILE_Representation that will be copied.
      */
     OBJK_QOSPROFILE_Representation& operator=(OBJK_QOSPROFILE_Representation &&x);
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -2637,36 +2637,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_TYPE_Representation();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_TYPE_Representation();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_TYPE_Representation that will be copied.
      */
     OBJK_TYPE_Representation(const OBJK_TYPE_Representation &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_TYPE_Representation that will be copied.
      */
     OBJK_TYPE_Representation(OBJK_TYPE_Representation &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_TYPE_Representation that will be copied.
      */
     OBJK_TYPE_Representation& operator=(const OBJK_TYPE_Representation &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_TYPE_Representation that will be copied.
      */
     OBJK_TYPE_Representation& operator=(OBJK_TYPE_Representation &&x);
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -2708,36 +2708,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_DOMAIN_Representation();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_DOMAIN_Representation();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_DOMAIN_Representation that will be copied.
      */
     OBJK_DOMAIN_Representation(const OBJK_DOMAIN_Representation &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_DOMAIN_Representation that will be copied.
      */
     OBJK_DOMAIN_Representation(OBJK_DOMAIN_Representation &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_DOMAIN_Representation that will be copied.
      */
     OBJK_DOMAIN_Representation& operator=(const OBJK_DOMAIN_Representation &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_DOMAIN_Representation that will be copied.
      */
     OBJK_DOMAIN_Representation& operator=(OBJK_DOMAIN_Representation &&x);
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -2779,36 +2779,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_APPLICATION_Representation();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_APPLICATION_Representation();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_APPLICATION_Representation that will be copied.
      */
     OBJK_APPLICATION_Representation(const OBJK_APPLICATION_Representation &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_APPLICATION_Representation that will be copied.
      */
     OBJK_APPLICATION_Representation(OBJK_APPLICATION_Representation &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_APPLICATION_Representation that will be copied.
      */
     OBJK_APPLICATION_Representation& operator=(const OBJK_APPLICATION_Representation &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_APPLICATION_Representation that will be copied.
      */
     OBJK_APPLICATION_Representation& operator=(OBJK_APPLICATION_Representation &&x);
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -2850,30 +2850,30 @@ public:
      * @brief Default constructor.
      */
     OBJK_PARTICIPANT_Representation();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_PARTICIPANT_Representation();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_PARTICIPANT_Representation that will be copied.
      */
     OBJK_PARTICIPANT_Representation(const OBJK_PARTICIPANT_Representation &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_PARTICIPANT_Representation that will be copied.
      */
     OBJK_PARTICIPANT_Representation(OBJK_PARTICIPANT_Representation &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_PARTICIPANT_Representation that will be copied.
      */
     OBJK_PARTICIPANT_Representation& operator=(const OBJK_PARTICIPANT_Representation &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_PARTICIPANT_Representation that will be copied.
@@ -2951,36 +2951,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_TOPIC_Representation();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_TOPIC_Representation();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_TOPIC_Representation that will be copied.
      */
     OBJK_TOPIC_Representation(const OBJK_TOPIC_Representation &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_TOPIC_Representation that will be copied.
      */
     OBJK_TOPIC_Representation(OBJK_TOPIC_Representation &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_TOPIC_Representation that will be copied.
      */
     OBJK_TOPIC_Representation& operator=(const OBJK_TOPIC_Representation &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_TOPIC_Representation that will be copied.
      */
     OBJK_TOPIC_Representation& operator=(OBJK_TOPIC_Representation &&x);
-    
+
     /*!
      * @brief This function copies the value in member participant_id
      * @param _participant_id New value to be copied in member participant_id
@@ -3016,7 +3016,7 @@ public:
     {
         return m_participant_id;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -3061,36 +3061,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_PUBLISHER_Representation();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_PUBLISHER_Representation();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_PUBLISHER_Representation that will be copied.
      */
     OBJK_PUBLISHER_Representation(const OBJK_PUBLISHER_Representation &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_PUBLISHER_Representation that will be copied.
      */
     OBJK_PUBLISHER_Representation(OBJK_PUBLISHER_Representation &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_PUBLISHER_Representation that will be copied.
      */
     OBJK_PUBLISHER_Representation& operator=(const OBJK_PUBLISHER_Representation &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_PUBLISHER_Representation that will be copied.
      */
     OBJK_PUBLISHER_Representation& operator=(OBJK_PUBLISHER_Representation &&x);
-    
+
     /*!
      * @brief This function copies the value in member participant_id
      * @param _participant_id New value to be copied in member participant_id
@@ -3126,7 +3126,7 @@ public:
     {
         return m_participant_id;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -3171,36 +3171,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_SUBSCRIBER_Representation();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_SUBSCRIBER_Representation();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_SUBSCRIBER_Representation that will be copied.
      */
     OBJK_SUBSCRIBER_Representation(const OBJK_SUBSCRIBER_Representation &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_SUBSCRIBER_Representation that will be copied.
      */
     OBJK_SUBSCRIBER_Representation(OBJK_SUBSCRIBER_Representation &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_SUBSCRIBER_Representation that will be copied.
      */
     OBJK_SUBSCRIBER_Representation& operator=(const OBJK_SUBSCRIBER_Representation &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_SUBSCRIBER_Representation that will be copied.
      */
     OBJK_SUBSCRIBER_Representation& operator=(OBJK_SUBSCRIBER_Representation &&x);
-    
+
     /*!
      * @brief This function copies the value in member participant_id
      * @param _participant_id New value to be copied in member participant_id
@@ -3236,7 +3236,7 @@ public:
     {
         return m_participant_id;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -3280,36 +3280,36 @@ public:
      * @brief Default constructor.
      */
     DATAWRITER_Representation();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~DATAWRITER_Representation();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object DATAWRITER_Representation that will be copied.
      */
     DATAWRITER_Representation(const DATAWRITER_Representation &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object DATAWRITER_Representation that will be copied.
      */
     DATAWRITER_Representation(DATAWRITER_Representation &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object DATAWRITER_Representation that will be copied.
      */
     DATAWRITER_Representation& operator=(const DATAWRITER_Representation &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object DATAWRITER_Representation that will be copied.
      */
     DATAWRITER_Representation& operator=(DATAWRITER_Representation &&x);
-    
+
     /*!
      * @brief This function copies the value in member publisher_id
      * @param _publisher_id New value to be copied in member publisher_id
@@ -3345,7 +3345,7 @@ public:
     {
         return m_publisher_id;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -3390,36 +3390,36 @@ public:
      * @brief Default constructor.
      */
     DATAREADER_Representation();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~DATAREADER_Representation();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object DATAREADER_Representation that will be copied.
      */
     DATAREADER_Representation(const DATAREADER_Representation &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object DATAREADER_Representation that will be copied.
      */
     DATAREADER_Representation(DATAREADER_Representation &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object DATAREADER_Representation that will be copied.
      */
     DATAREADER_Representation& operator=(const DATAREADER_Representation &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object DATAREADER_Representation that will be copied.
      */
     DATAREADER_Representation& operator=(DATAREADER_Representation &&x);
-    
+
     /*!
      * @brief This function copies the value in member subscriber_id
      * @param _subscriber_id New value to be copied in member subscriber_id
@@ -3455,7 +3455,7 @@ public:
     {
         return m_subscriber_id;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -3720,36 +3720,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_DomainParticipant_Binary();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_DomainParticipant_Binary();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_DomainParticipant_Binary that will be copied.
      */
     OBJK_DomainParticipant_Binary(const OBJK_DomainParticipant_Binary &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_DomainParticipant_Binary that will be copied.
      */
     OBJK_DomainParticipant_Binary(OBJK_DomainParticipant_Binary &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_DomainParticipant_Binary that will be copied.
      */
     OBJK_DomainParticipant_Binary& operator=(const OBJK_DomainParticipant_Binary &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_DomainParticipant_Binary that will be copied.
      */
     OBJK_DomainParticipant_Binary& operator=(OBJK_DomainParticipant_Binary &&x);
-    
+
     /*!
      * @brief This function sets a value in member domain_id
      * @param _domain_id New value for member domain_id
@@ -3856,7 +3856,7 @@ public:
     {
         return *m_qos_profile;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -3902,36 +3902,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_Topic_Binary();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_Topic_Binary();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_Topic_Binary that will be copied.
      */
     OBJK_Topic_Binary(const OBJK_Topic_Binary &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_Topic_Binary that will be copied.
      */
     OBJK_Topic_Binary(OBJK_Topic_Binary &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_Topic_Binary that will be copied.
      */
     OBJK_Topic_Binary& operator=(const OBJK_Topic_Binary &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_Topic_Binary that will be copied.
      */
     OBJK_Topic_Binary& operator=(OBJK_Topic_Binary &&x);
-    
+
     /*!
      * @brief This function copies the value in member topic_name
      * @param _topic_name New value to be copied in member topic_name
@@ -4037,7 +4037,7 @@ public:
     {
         return *m_type_identifier;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -4083,36 +4083,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_PUBLISHER_QosBinary();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_PUBLISHER_QosBinary();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_PUBLISHER_QosBinary that will be copied.
      */
     OBJK_PUBLISHER_QosBinary(const OBJK_PUBLISHER_QosBinary &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_PUBLISHER_QosBinary that will be copied.
      */
     OBJK_PUBLISHER_QosBinary(OBJK_PUBLISHER_QosBinary &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_PUBLISHER_QosBinary that will be copied.
      */
     OBJK_PUBLISHER_QosBinary& operator=(const OBJK_PUBLISHER_QosBinary &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_PUBLISHER_QosBinary that will be copied.
      */
     OBJK_PUBLISHER_QosBinary& operator=(OBJK_PUBLISHER_QosBinary &&x);
-    
+
     /*!
      * @brief This function copies the value in member partitions
      * @param _partitions New value to be copied in member partitions
@@ -4183,7 +4183,7 @@ public:
     {
         return m_group_data;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -4228,36 +4228,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_Publisher_Binary();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_Publisher_Binary();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_Publisher_Binary that will be copied.
      */
     OBJK_Publisher_Binary(const OBJK_Publisher_Binary &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_Publisher_Binary that will be copied.
      */
     OBJK_Publisher_Binary(OBJK_Publisher_Binary &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_Publisher_Binary that will be copied.
      */
     OBJK_Publisher_Binary& operator=(const OBJK_Publisher_Binary &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_Publisher_Binary that will be copied.
      */
     OBJK_Publisher_Binary& operator=(OBJK_Publisher_Binary &&x);
-    
+
     /*!
      * @brief This function copies the value in member publisher_name
      * @param _publisher_name New value to be copied in member publisher_name
@@ -4337,7 +4337,7 @@ public:
     {
         return *m_qos;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -4382,36 +4382,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_SUBSCRIBER_QosBinary();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_SUBSCRIBER_QosBinary();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_SUBSCRIBER_QosBinary that will be copied.
      */
     OBJK_SUBSCRIBER_QosBinary(const OBJK_SUBSCRIBER_QosBinary &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_SUBSCRIBER_QosBinary that will be copied.
      */
     OBJK_SUBSCRIBER_QosBinary(OBJK_SUBSCRIBER_QosBinary &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_SUBSCRIBER_QosBinary that will be copied.
      */
     OBJK_SUBSCRIBER_QosBinary& operator=(const OBJK_SUBSCRIBER_QosBinary &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_SUBSCRIBER_QosBinary that will be copied.
      */
     OBJK_SUBSCRIBER_QosBinary& operator=(OBJK_SUBSCRIBER_QosBinary &&x);
-    
+
     /*!
      * @brief This function copies the value in member partitions
      * @param _partitions New value to be copied in member partitions
@@ -4482,7 +4482,7 @@ public:
     {
         return m_group_data;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -4527,36 +4527,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_Subscriber_Binary();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_Subscriber_Binary();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_Subscriber_Binary that will be copied.
      */
     OBJK_Subscriber_Binary(const OBJK_Subscriber_Binary &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_Subscriber_Binary that will be copied.
      */
     OBJK_Subscriber_Binary(OBJK_Subscriber_Binary &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_Subscriber_Binary that will be copied.
      */
     OBJK_Subscriber_Binary& operator=(const OBJK_Subscriber_Binary &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_Subscriber_Binary that will be copied.
      */
     OBJK_Subscriber_Binary& operator=(OBJK_Subscriber_Binary &&x);
-    
+
     /*!
      * @brief This function copies the value in member subscriber_name
      * @param _subscriber_name New value to be copied in member subscriber_name
@@ -4637,7 +4637,7 @@ public:
     {
         return *m_qos;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -4695,36 +4695,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_Endpoint_QosBinary();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_Endpoint_QosBinary();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_Endpoint_QosBinary that will be copied.
      */
     OBJK_Endpoint_QosBinary(const OBJK_Endpoint_QosBinary &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_Endpoint_QosBinary that will be copied.
      */
     OBJK_Endpoint_QosBinary(OBJK_Endpoint_QosBinary &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_Endpoint_QosBinary that will be copied.
      */
     OBJK_Endpoint_QosBinary& operator=(const OBJK_Endpoint_QosBinary &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_Endpoint_QosBinary that will be copied.
      */
     OBJK_Endpoint_QosBinary& operator=(OBJK_Endpoint_QosBinary &&x);
-    
+
     /*!
      * @brief This function sets a value in member qos_flags
      * @param _qos_flags New value for member qos_flags
@@ -4896,7 +4896,7 @@ public:
     {
         return *m_user_data;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -5132,36 +5132,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_DataReader_Binary();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_DataReader_Binary();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_DataReader_Binary that will be copied.
      */
     OBJK_DataReader_Binary(const OBJK_DataReader_Binary &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_DataReader_Binary that will be copied.
      */
     OBJK_DataReader_Binary(OBJK_DataReader_Binary &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_DataReader_Binary that will be copied.
      */
     OBJK_DataReader_Binary& operator=(const OBJK_DataReader_Binary &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_DataReader_Binary that will be copied.
      */
     OBJK_DataReader_Binary& operator=(OBJK_DataReader_Binary &&x);
-    
+
     /*!
      * @brief This function copies the value in member topic_name
      * @param _topic_name New value to be copied in member topic_name
@@ -5422,36 +5422,36 @@ public:
      * @brief Default constructor.
      */
     OBJK_DataWriter_Binary();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~OBJK_DataWriter_Binary();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object OBJK_DataWriter_Binary that will be copied.
      */
     OBJK_DataWriter_Binary(const OBJK_DataWriter_Binary &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object OBJK_DataWriter_Binary that will be copied.
      */
     OBJK_DataWriter_Binary(OBJK_DataWriter_Binary &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object OBJK_DataWriter_Binary that will be copied.
      */
     OBJK_DataWriter_Binary& operator=(const OBJK_DataWriter_Binary &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object OBJK_DataWriter_Binary that will be copied.
      */
     OBJK_DataWriter_Binary& operator=(OBJK_DataWriter_Binary &&x);
-    
+
     /*!
      * @brief This function copies the value in member topic_name
      * @param _topic_name New value to be copied in member topic_name
@@ -5567,55 +5567,55 @@ public:
      * @brief Default constructor.
      */
     ObjectVariant();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~ObjectVariant();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object ObjectVariant that will be copied.
      */
     ObjectVariant(const ObjectVariant &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object ObjectVariant that will be copied.
      */
     ObjectVariant(ObjectVariant &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object ObjectVariant that will be copied.
      */
     ObjectVariant& operator=(const ObjectVariant &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object ObjectVariant that will be copied.
      */
     ObjectVariant& operator=(ObjectVariant &&x);
-    
+
     /*!
      * @brief This function sets the discriminator value.
      * @param __d New value for the discriminator.
      * @exception dds::xrce::XRCETypesException This exception is thrown if the new value doesn't correspond to the selected union member.
      */
     void _d(ObjectKind __d);
-    
+
     /*!
      * @brief This function returns the value of the discriminator.
      * @return Value of the discriminator
      */
     ObjectKind _d() const;
-    
+
     /*!
      * @brief This function returns a reference to the discriminator.
      * @return Reference to the discriminator.
      */
     ObjectKind& _d();
-    
+
     /*!
      * @brief This function copies the value in member agent
      * @param _agent New value to be copied in member agent
@@ -5845,7 +5845,7 @@ public:
      * @exception dds::xrce::XRCETypesException This exception is thrown if the requested union member is not the current selection.
      */
     OBJK_SUBSCRIBER_Representation& subscriber();
-    
+
     /*!
      * @brief This function copies the value in member data_writer
      * @param _data_writer New value to be copied in member data_writer
@@ -6035,36 +6035,36 @@ public:
      * @brief Default constructor.
      */
     CreationMode();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~CreationMode();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object CreationMode that will be copied.
      */
     CreationMode(const CreationMode &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object CreationMode that will be copied.
      */
     CreationMode(CreationMode &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object CreationMode that will be copied.
      */
     CreationMode& operator=(const CreationMode &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object CreationMode that will be copied.
      */
     CreationMode& operator=(CreationMode &&x);
-    
+
     /*!
      * @brief This function sets a value in member reuse
      * @param _reuse New value for member reuse
@@ -6117,7 +6117,7 @@ public:
     {
         return m_replace;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -6180,36 +6180,36 @@ public:
      * @brief Default constructor.
      */
     ResultStatus();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~ResultStatus();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object ResultStatus that will be copied.
      */
     ResultStatus(const ResultStatus &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object ResultStatus that will be copied.
      */
     ResultStatus(ResultStatus &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object ResultStatus that will be copied.
      */
     ResultStatus& operator=(const ResultStatus &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object ResultStatus that will be copied.
      */
     ResultStatus& operator=(ResultStatus &&x);
-    
+
     /*!
      * @brief This function sets a value in member status
      * @param _status New value for member status
@@ -6262,7 +6262,7 @@ public:
     {
         return m_implementation_status;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -6318,36 +6318,36 @@ public:
      * @brief Default constructor.
      */
     AGENT_ActivityInfo();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~AGENT_ActivityInfo();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object AGENT_ActivityInfo that will be copied.
      */
     AGENT_ActivityInfo(const AGENT_ActivityInfo &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object AGENT_ActivityInfo that will be copied.
      */
     AGENT_ActivityInfo(AGENT_ActivityInfo &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object AGENT_ActivityInfo that will be copied.
      */
     AGENT_ActivityInfo& operator=(const AGENT_ActivityInfo &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object AGENT_ActivityInfo that will be copied.
      */
     AGENT_ActivityInfo& operator=(AGENT_ActivityInfo &&x);
-    
+
     /*!
      * @brief This function sets a value in member availability
      * @param _availability New value for member availability
@@ -6409,7 +6409,7 @@ public:
     {
         return m_address_seq;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -6454,36 +6454,36 @@ public:
      * @brief Default constructor.
      */
     DATAREADER_ActivityInfo();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~DATAREADER_ActivityInfo();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object DATAREADER_ActivityInfo that will be copied.
      */
     DATAREADER_ActivityInfo(const DATAREADER_ActivityInfo &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object DATAREADER_ActivityInfo that will be copied.
      */
     DATAREADER_ActivityInfo(DATAREADER_ActivityInfo &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object DATAREADER_ActivityInfo that will be copied.
      */
     DATAREADER_ActivityInfo& operator=(const DATAREADER_ActivityInfo &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object DATAREADER_ActivityInfo that will be copied.
      */
     DATAREADER_ActivityInfo& operator=(DATAREADER_ActivityInfo &&x);
-    
+
     /*!
      * @brief This function sets a value in member highest_acked_num
      * @param _highest_acked_num New value for member highest_acked_num
@@ -6510,7 +6510,7 @@ public:
     {
         return m_highest_acked_num;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -6555,36 +6555,36 @@ public:
      * @brief Default constructor.
      */
     DATAWRITER_ActivityInfo();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~DATAWRITER_ActivityInfo();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object DATAWRITER_ActivityInfo that will be copied.
      */
     DATAWRITER_ActivityInfo(const DATAWRITER_ActivityInfo &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object DATAWRITER_ActivityInfo that will be copied.
      */
     DATAWRITER_ActivityInfo(DATAWRITER_ActivityInfo &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object DATAWRITER_ActivityInfo that will be copied.
      */
     DATAWRITER_ActivityInfo& operator=(const DATAWRITER_ActivityInfo &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object DATAWRITER_ActivityInfo that will be copied.
      */
     DATAWRITER_ActivityInfo& operator=(DATAWRITER_ActivityInfo &&x);
-    
+
     /*!
      * @brief This function sets a value in member stream_seq_num
      * @param _stream_seq_num New value for member stream_seq_num
@@ -6637,7 +6637,7 @@ public:
     {
         return m_sample_seq_num;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -6683,49 +6683,49 @@ public:
      * @brief Default constructor.
      */
     ActivityInfoVariant();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~ActivityInfoVariant();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object ActivityInfoVariant that will be copied.
      */
     ActivityInfoVariant(const ActivityInfoVariant &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object ActivityInfoVariant that will be copied.
      */
     ActivityInfoVariant(ActivityInfoVariant &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object ActivityInfoVariant that will be copied.
      */
     ActivityInfoVariant& operator=(const ActivityInfoVariant &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object ActivityInfoVariant that will be copied.
      */
     ActivityInfoVariant& operator=(ActivityInfoVariant &&x);
-    
+
     /*!
      * @brief This function sets the discriminator value.
      * @param __d New value for the discriminator.
      * @exception dds::xrce::XRCETypesException This exception is thrown if the new value doesn't correspond to the selected union member.
      */
     void _d(ObjectKind __d);
-    
+
     /*!
      * @brief This function returns the value of the discriminator.
      * @return Value of the discriminator
      */
     ObjectKind _d() const;
-    
+
     /*!
      * @brief This function returns a reference to the discriminator.
      * @return Reference to the discriminator.
@@ -6809,7 +6809,7 @@ public:
      * @exception dds::xrce::XRCETypesException This exception is thrown if the requested union member is not the current selection.
      */
     DATAREADER_ActivityInfo& data_reader();
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -6840,7 +6840,7 @@ public:
 
 private:
     ObjectKind m__d;
-    
+
     AGENT_ActivityInfo m_agent;
     DATAWRITER_ActivityInfo m_data_writer;
     DATAREADER_ActivityInfo m_data_reader;
@@ -6858,36 +6858,36 @@ public:
      * @brief Default constructor.
      */
     ObjectInfo();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~ObjectInfo();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object ObjectInfo that will be copied.
      */
     ObjectInfo(const ObjectInfo &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object ObjectInfo that will be copied.
      */
     ObjectInfo(ObjectInfo &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object ObjectInfo that will be copied.
      */
     ObjectInfo& operator=(const ObjectInfo &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object ObjectInfo that will be copied.
      */
     ObjectInfo& operator=(ObjectInfo &&x);
-    
+
     /*!
      * @brief This function copies the value in member config
      * @param _config New value to be copied in member config
@@ -6984,7 +6984,7 @@ public:
         }
         return *m_activity;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -7030,36 +7030,36 @@ public:
      * @brief Default constructor.
      */
     BaseObjectRequest();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~BaseObjectRequest();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object BaseObjectRequest that will be copied.
      */
     BaseObjectRequest(const BaseObjectRequest &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object BaseObjectRequest that will be copied.
      */
     BaseObjectRequest(BaseObjectRequest &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object BaseObjectRequest that will be copied.
      */
     BaseObjectRequest& operator=(const BaseObjectRequest &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object BaseObjectRequest that will be copied.
      */
     BaseObjectRequest& operator=(BaseObjectRequest &&x);
-    
+
     /*!
      * @brief This function copies the value in member request_id
      * @param _request_id New value to be copied in member request_id
@@ -7130,7 +7130,7 @@ public:
     {
         return m_object_id;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -7177,36 +7177,36 @@ public:
      * @brief Default constructor.
      */
     BaseObjectReply();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~BaseObjectReply();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object BaseObjectReply that will be copied.
      */
     BaseObjectReply(const BaseObjectReply &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object BaseObjectReply that will be copied.
      */
     BaseObjectReply(BaseObjectReply &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object BaseObjectReply that will be copied.
      */
     BaseObjectReply& operator=(const BaseObjectReply &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object BaseObjectReply that will be copied.
      */
     BaseObjectReply& operator=(BaseObjectReply &&x);
-    
+
     /*!
      * @brief This function copies the value in member related_request
      * @param _related_request New value to be copied in member related_request
@@ -7277,7 +7277,7 @@ public:
     {
         return m_result;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -7331,36 +7331,36 @@ public:
      * @brief Default constructor.
      */
     DataDeliveryControl();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~DataDeliveryControl();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object DataDeliveryControl that will be copied.
      */
     DataDeliveryControl(const DataDeliveryControl &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object DataDeliveryControl that will be copied.
      */
     DataDeliveryControl(DataDeliveryControl &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object DataDeliveryControl that will be copied.
      */
     DataDeliveryControl& operator=(const DataDeliveryControl &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object DataDeliveryControl that will be copied.
      */
     DataDeliveryControl& operator=(DataDeliveryControl &&x);
-    
+
     /*!
      * @brief This function sets a value in member max_samples
      * @param _max_samples New value for member max_samples
@@ -7504,30 +7504,30 @@ public:
      * @brief Default constructor.
      */
     ReadSpecification();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~ReadSpecification();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object ReadSpecification that will be copied.
      */
     ReadSpecification(const ReadSpecification &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object ReadSpecification that will be copied.
      */
     ReadSpecification(ReadSpecification &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object ReadSpecification that will be copied.
      */
     ReadSpecification& operator=(const ReadSpecification &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object ReadSpecification that will be copied.
@@ -7685,7 +7685,7 @@ public:
         }
         return *m_delivery_control;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -7745,36 +7745,36 @@ public:
      * @brief Default constructor.
      */
     SampleInfo();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~SampleInfo();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object SampleInfo that will be copied.
      */
     SampleInfo(const SampleInfo &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object SampleInfo that will be copied.
      */
     SampleInfo(SampleInfo &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object SampleInfo that will be copied.
      */
     SampleInfo& operator=(const SampleInfo &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object SampleInfo that will be copied.
      */
     SampleInfo& operator=(SampleInfo &&x);
-    
+
     /*!
      * @brief This function sets a value in member state
      * @param _state New value for member state
@@ -7853,7 +7853,7 @@ public:
     {
         return m_session_time_offset;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -7902,36 +7902,36 @@ public:
      * @brief Default constructor.
      */
     SampleInfoDelta();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~SampleInfoDelta();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object SampleInfoDelta that will be copied.
      */
     SampleInfoDelta(const SampleInfoDelta &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object SampleInfoDelta that will be copied.
      */
     SampleInfoDelta(SampleInfoDelta &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object SampleInfoDelta that will be copied.
      */
     SampleInfoDelta& operator=(const SampleInfoDelta &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object SampleInfoDelta that will be copied.
      */
     SampleInfoDelta& operator=(SampleInfoDelta &&x);
-    
+
     /*!
      * @brief This function sets a value in member state
      * @param _state New value for member state
@@ -8010,7 +8010,7 @@ public:
     {
         return m_timestamp_delta;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -8049,7 +8049,7 @@ private:
  * @brief This class represents the structure SampleData defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class SampleData
+class SampleData final
 {
 public:
 
@@ -8057,36 +8057,36 @@ public:
      * @brief Default constructor.
      */
     SampleData();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~SampleData();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object SampleData that will be copied.
      */
     SampleData(const SampleData &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object SampleData that will be copied.
      */
     SampleData(SampleData &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object SampleData that will be copied.
      */
     SampleData& operator=(const SampleData &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object SampleData that will be copied.
      */
     SampleData& operator=(SampleData &&x);
-    
+
     /*!
      * @brief This function copies the value in member serialized_data
      * @param _serialized_data New value to be copied in member serialized_data
@@ -8122,7 +8122,7 @@ public:
     {
         return m_serialized_data;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -8166,7 +8166,7 @@ typedef std::vector<SampleData> SampleDataSeq;
  * @brief This class represents the structure Sample defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class Sample
+class Sample final
 {
 public:
 
@@ -8174,36 +8174,36 @@ public:
      * @brief Default constructor.
      */
     Sample();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~Sample();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object Sample that will be copied.
      */
     Sample(const Sample &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object Sample that will be copied.
      */
     Sample(Sample &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object Sample that will be copied.
      */
     Sample& operator=(const Sample &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object Sample that will be copied.
      */
     Sample& operator=(Sample &&x);
-    
+
     /*!
      * @brief This function copies the value in member info
      * @param _info New value to be copied in member info
@@ -8274,7 +8274,7 @@ public:
     {
         return m_data;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -8314,7 +8314,7 @@ typedef std::vector<Sample> SampleSeq;
  * @brief This class represents the structure SampleDelta defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class SampleDelta
+class SampleDelta final
 {
 public:
 
@@ -8322,36 +8322,36 @@ public:
      * @brief Default constructor.
      */
     SampleDelta();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~SampleDelta();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object SampleDelta that will be copied.
      */
     SampleDelta(const SampleDelta &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object SampleDelta that will be copied.
      */
     SampleDelta(SampleDelta &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object SampleDelta that will be copied.
      */
     SampleDelta& operator=(const SampleDelta &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object SampleDelta that will be copied.
      */
     SampleDelta& operator=(SampleDelta &&x);
-    
+
     /*!
      * @brief This function copies the value in member info_delta
      * @param _info_delta New value to be copied in member info_delta
@@ -8422,7 +8422,7 @@ public:
     {
         return m_data;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -8460,7 +8460,7 @@ private:
  * @brief This class represents the structure PackedSamples defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class PackedSamples
+class PackedSamples final
 {
 public:
 
@@ -8468,36 +8468,36 @@ public:
      * @brief Default constructor.
      */
     PackedSamples();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~PackedSamples();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object PackedSamples that will be copied.
      */
     PackedSamples(const PackedSamples &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object PackedSamples that will be copied.
      */
     PackedSamples(PackedSamples &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object PackedSamples that will be copied.
      */
     PackedSamples& operator=(const PackedSamples &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object PackedSamples that will be copied.
      */
     PackedSamples& operator=(PackedSamples &&x);
-    
+
     /*!
      * @brief This function copies the value in member info_base
      * @param _info_base New value to be copied in member info_base
@@ -8568,7 +8568,7 @@ public:
     {
         return m_sample_delta_seq;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -8608,7 +8608,7 @@ typedef std::vector<PackedSamples> SamplePackedSeq;
  * @brief This class represents the union DataRepresentation defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class DataRepresentation
+class DataRepresentation final
 {
 public:
 
@@ -8616,55 +8616,55 @@ public:
      * @brief Default constructor.
      */
     DataRepresentation();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~DataRepresentation();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object DataRepresentation that will be copied.
      */
     DataRepresentation(const DataRepresentation &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object DataRepresentation that will be copied.
      */
     DataRepresentation(DataRepresentation &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object DataRepresentation that will be copied.
      */
     DataRepresentation& operator=(const DataRepresentation &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object DataRepresentation that will be copied.
      */
     DataRepresentation& operator=(DataRepresentation &&x);
-    
+
     /*!
      * @brief This function sets the discriminator value.
      * @param __d New value for the discriminator.
      * @exception dds::xrce::XRCETypesException This exception is thrown if the new value doesn't correspond to the selected union member.
      */
     void _d(DataFormat __d);
-    
+
     /*!
      * @brief This function returns the value of the discriminator.
      * @return Value of the discriminator
      */
     DataFormat _d() const;
-    
+
     /*!
      * @brief This function returns a reference to the discriminator.
      * @return Reference to the discriminator.
      */
     DataFormat& _d();
-    
+
     /*!
      * @brief This function copies the value in member data
      * @param _data New value to be copied in member data
@@ -8790,7 +8790,7 @@ public:
      * @exception dds::xrce::XRCETypesException This exception is thrown if the requested union member is not the current selection.
      */
     PackedSamples& packed_samples();
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -8821,7 +8821,7 @@ public:
 
 private:
     DataFormat m__d;
-    
+
     SampleData m_data;
     Sample m_sample;
     SampleDataSeq m_data_seq;
@@ -8833,7 +8833,7 @@ private:
  * @brief This class represents the structure CREATE_CLIENT_Payload defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class CREATE_CLIENT_Payload
+class CREATE_CLIENT_Payload final
 {
 public:
 
@@ -8841,36 +8841,36 @@ public:
      * @brief Default constructor.
      */
     CREATE_CLIENT_Payload();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~CREATE_CLIENT_Payload();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object CREATE_CLIENT_Payload that will be copied.
      */
     CREATE_CLIENT_Payload(const CREATE_CLIENT_Payload &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object CREATE_CLIENT_Payload that will be copied.
      */
     CREATE_CLIENT_Payload(CREATE_CLIENT_Payload &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object CREATE_CLIENT_Payload that will be copied.
      */
     CREATE_CLIENT_Payload& operator=(const CREATE_CLIENT_Payload &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object CREATE_CLIENT_Payload that will be copied.
      */
     CREATE_CLIENT_Payload& operator=(CREATE_CLIENT_Payload &&x);
-    
+
     /*!
      * @brief This function copies the value in member client_representation
      * @param _client_representation New value to be copied in member client_representation
@@ -8906,7 +8906,7 @@ public:
     {
         return m_client_representation;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -8943,7 +8943,7 @@ private:
  * @brief This class represents the structure CREATE_CLIENT_Payload defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class CREATE_Payload : public BaseObjectRequest
+class CREATE_Payload final : public BaseObjectRequest
 {
 public:
 
@@ -8951,36 +8951,36 @@ public:
      * @brief Default constructor.
      */
     CREATE_Payload();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~CREATE_Payload();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object CREATE_Payload that will be copied.
      */
     CREATE_Payload(const CREATE_Payload &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object CREATE_Payload that will be copied.
      */
     CREATE_Payload(CREATE_Payload &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object CREATE_Payload that will be copied.
      */
     CREATE_Payload& operator=(const CREATE_Payload &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object CREATE_Payload that will be copied.
      */
     CREATE_Payload& operator=(CREATE_Payload &&x);
-    
+
     /*!
      * @brief This function copies the value in member object_representation
      * @param _object_representation New value to be copied in member object_representation
@@ -9016,7 +9016,7 @@ public:
     {
         return m_object_representation;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -9053,7 +9053,7 @@ private:
  * @brief This class represents the structure GET_INFO_Payload defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class GET_INFO_Payload : public BaseObjectRequest
+class GET_INFO_Payload final : public BaseObjectRequest
 {
 public:
 
@@ -9061,36 +9061,36 @@ public:
      * @brief Default constructor.
      */
     GET_INFO_Payload();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~GET_INFO_Payload();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object GET_INFO_Payload that will be copied.
      */
     GET_INFO_Payload(const GET_INFO_Payload &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object GET_INFO_Payload that will be copied.
      */
     GET_INFO_Payload(GET_INFO_Payload &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object GET_INFO_Payload that will be copied.
      */
     GET_INFO_Payload& operator=(const GET_INFO_Payload &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object GET_INFO_Payload that will be copied.
      */
     GET_INFO_Payload& operator=(GET_INFO_Payload &&x);
-    
+
     /*!
      * @brief This function sets a value in member info_mask
      * @param _info_mask New value for member info_mask
@@ -9117,7 +9117,7 @@ public:
     {
         return m_info_mask;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -9154,7 +9154,7 @@ private:
  * @brief This class represents the structure DELETE_Payload defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class DELETE_Payload : public BaseObjectRequest
+class DELETE_Payload final : public BaseObjectRequest
 {
 public:
 
@@ -9162,36 +9162,36 @@ public:
      * @brief Default constructor.
      */
     DELETE_Payload();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~DELETE_Payload();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object DELETE_Payload that will be copied.
      */
     DELETE_Payload(const DELETE_Payload &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object DELETE_Payload that will be copied.
      */
     DELETE_Payload(DELETE_Payload &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object DELETE_Payload that will be copied.
      */
     DELETE_Payload& operator=(const DELETE_Payload &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object DELETE_Payload that will be copied.
      */
     DELETE_Payload& operator=(DELETE_Payload &&x);
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -9225,7 +9225,7 @@ public:
  * @brief This class represents the structure STATUS_AGENT_Payload defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class STATUS_AGENT_Payload
+class STATUS_AGENT_Payload final
 {
 public:
 
@@ -9233,30 +9233,30 @@ public:
      * @brief Default constructor.
      */
     STATUS_AGENT_Payload();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~STATUS_AGENT_Payload();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object STATUS_AGENT_Payload that will be copied.
      */
     STATUS_AGENT_Payload(const STATUS_AGENT_Payload &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object STATUS_AGENT_Payload that will be copied.
      */
     STATUS_AGENT_Payload(STATUS_AGENT_Payload &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object STATUS_AGENT_Payload that will be copied.
      */
     STATUS_AGENT_Payload& operator=(const STATUS_AGENT_Payload &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object STATUS_AGENT_Payload that will be copied.
@@ -9334,7 +9334,7 @@ public:
     {
         return m_agent_info;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -9372,7 +9372,7 @@ private:
  * @brief This class represents the structure STATUS_Payload defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class STATUS_Payload : public BaseObjectReply
+class STATUS_Payload final : public BaseObjectReply
 {
 public:
 
@@ -9380,36 +9380,36 @@ public:
      * @brief Default constructor.
      */
     STATUS_Payload();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~STATUS_Payload();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object STATUS_Payload that will be copied.
      */
     STATUS_Payload(const STATUS_Payload &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object STATUS_Payload that will be copied.
      */
     STATUS_Payload(STATUS_Payload &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object STATUS_Payload that will be copied.
      */
     STATUS_Payload& operator=(const STATUS_Payload &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object STATUS_Payload that will be copied.
      */
     STATUS_Payload& operator=(STATUS_Payload &&x);
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -9442,7 +9442,7 @@ public:
  * @brief This class represents the structure INFO_Payload defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class INFO_Payload : public BaseObjectReply
+class INFO_Payload final : public BaseObjectReply
 {
 public:
 
@@ -9450,36 +9450,36 @@ public:
      * @brief Default constructor.
      */
     INFO_Payload();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~INFO_Payload();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object INFO_Payload that will be copied.
      */
     INFO_Payload(const INFO_Payload &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object INFO_Payload that will be copied.
      */
     INFO_Payload(INFO_Payload &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object INFO_Payload that will be copied.
      */
     INFO_Payload& operator=(const INFO_Payload &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object INFO_Payload that will be copied.
      */
     INFO_Payload& operator=(INFO_Payload &&x);
-    
+
     /*!
      * @brief This function copies the value in member object_info
      * @param _object_info New value to be copied in member object_info
@@ -9515,7 +9515,7 @@ public:
     {
         return m_object_info;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -9552,7 +9552,7 @@ private:
  * @brief This class represents the structure READ_DATA_Payload defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class READ_DATA_Payload : public BaseObjectRequest
+class READ_DATA_Payload final : public BaseObjectRequest
 {
 public:
 
@@ -9560,36 +9560,36 @@ public:
      * @brief Default constructor.
      */
     READ_DATA_Payload();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~READ_DATA_Payload();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object READ_DATA_Payload that will be copied.
      */
     READ_DATA_Payload(const READ_DATA_Payload &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object READ_DATA_Payload that will be copied.
      */
     READ_DATA_Payload(READ_DATA_Payload &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object READ_DATA_Payload that will be copied.
      */
     READ_DATA_Payload& operator=(const READ_DATA_Payload &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object READ_DATA_Payload that will be copied.
      */
     READ_DATA_Payload& operator=(READ_DATA_Payload &&x);
-    
+
     /*!
      * @brief This function copies the value in member read_specification
      * @param _read_specification New value to be copied in member read_specification
@@ -9625,7 +9625,7 @@ public:
     {
         return m_read_specification;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -9662,7 +9662,7 @@ private:
  * @brief This class represents the structure WRITE_DATA_Payload_Data defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class WRITE_DATA_Payload_Data : public BaseObjectRequest
+class WRITE_DATA_Payload_Data final : public BaseObjectRequest
 {
 public:
 
@@ -9670,36 +9670,36 @@ public:
      * @brief Default constructor.
      */
     WRITE_DATA_Payload_Data();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~WRITE_DATA_Payload_Data();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object WRITE_DATA_Payload_Data that will be copied.
      */
     WRITE_DATA_Payload_Data(const WRITE_DATA_Payload_Data &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object WRITE_DATA_Payload_Data that will be copied.
      */
     WRITE_DATA_Payload_Data(WRITE_DATA_Payload_Data &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object WRITE_DATA_Payload_Data that will be copied.
      */
     WRITE_DATA_Payload_Data& operator=(const WRITE_DATA_Payload_Data &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object WRITE_DATA_Payload_Data that will be copied.
      */
     WRITE_DATA_Payload_Data& operator=(WRITE_DATA_Payload_Data &&x);
-    
+
     /*!
      * @brief This function copies the value in member data
      * @param _data New value to be copied in member data
@@ -9735,7 +9735,7 @@ public:
     {
         return m_data;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -9772,7 +9772,7 @@ private:
  * @brief This class represents the structure WRITE_DATA_Payload_Sample defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class WRITE_DATA_Payload_Sample : public BaseObjectRequest
+class WRITE_DATA_Payload_Sample final : public BaseObjectRequest
 {
 public:
 
@@ -9780,36 +9780,36 @@ public:
      * @brief Default constructor.
      */
     WRITE_DATA_Payload_Sample();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~WRITE_DATA_Payload_Sample();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object WRITE_DATA_Payload_Sample that will be copied.
      */
     WRITE_DATA_Payload_Sample(const WRITE_DATA_Payload_Sample &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object WRITE_DATA_Payload_Sample that will be copied.
      */
     WRITE_DATA_Payload_Sample(WRITE_DATA_Payload_Sample &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object WRITE_DATA_Payload_Sample that will be copied.
      */
     WRITE_DATA_Payload_Sample& operator=(const WRITE_DATA_Payload_Sample &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object WRITE_DATA_Payload_Sample that will be copied.
      */
     WRITE_DATA_Payload_Sample& operator=(WRITE_DATA_Payload_Sample &&x);
-    
+
     /*!
      * @brief This function copies the value in member sample
      * @param _sample New value to be copied in member sample
@@ -9845,7 +9845,7 @@ public:
     {
         return m_sample;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -9882,7 +9882,7 @@ private:
  * @brief This class represents the structure WRITE_DATA_Payload_DataSeq defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class WRITE_DATA_Payload_DataSeq : public BaseObjectRequest
+class WRITE_DATA_Payload_DataSeq final : public BaseObjectRequest
 {
 public:
 
@@ -9890,36 +9890,36 @@ public:
      * @brief Default constructor.
      */
     WRITE_DATA_Payload_DataSeq();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~WRITE_DATA_Payload_DataSeq();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object WRITE_DATA_Payload_DataSeq that will be copied.
      */
     WRITE_DATA_Payload_DataSeq(const WRITE_DATA_Payload_DataSeq &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object WRITE_DATA_Payload_DataSeq that will be copied.
      */
     WRITE_DATA_Payload_DataSeq(WRITE_DATA_Payload_DataSeq &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object WRITE_DATA_Payload_DataSeq that will be copied.
      */
     WRITE_DATA_Payload_DataSeq& operator=(const WRITE_DATA_Payload_DataSeq &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object WRITE_DATA_Payload_DataSeq that will be copied.
      */
     WRITE_DATA_Payload_DataSeq& operator=(WRITE_DATA_Payload_DataSeq &&x);
-    
+
     /*!
      * @brief This function copies the value in member data_seq
      * @param _data_seq New value to be copied in member data_seq
@@ -9955,7 +9955,7 @@ public:
     {
         return m_data_seq;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -9992,7 +9992,7 @@ private:
  * @brief This class represents the structure WRITE_DATA_Payload_SampleSeq defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class WRITE_DATA_Payload_SampleSeq : public BaseObjectRequest
+class WRITE_DATA_Payload_SampleSeq final : public BaseObjectRequest
 {
 public:
 
@@ -10000,36 +10000,36 @@ public:
      * @brief Default constructor.
      */
     WRITE_DATA_Payload_SampleSeq();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~WRITE_DATA_Payload_SampleSeq();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object WRITE_DATA_Payload_SampleSeq that will be copied.
      */
     WRITE_DATA_Payload_SampleSeq(const WRITE_DATA_Payload_SampleSeq &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object WRITE_DATA_Payload_SampleSeq that will be copied.
      */
     WRITE_DATA_Payload_SampleSeq(WRITE_DATA_Payload_SampleSeq &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object WRITE_DATA_Payload_SampleSeq that will be copied.
      */
     WRITE_DATA_Payload_SampleSeq& operator=(const WRITE_DATA_Payload_SampleSeq &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object WRITE_DATA_Payload_SampleSeq that will be copied.
      */
     WRITE_DATA_Payload_SampleSeq& operator=(WRITE_DATA_Payload_SampleSeq &&x);
-    
+
     /*!
      * @brief This function copies the value in member sample_seq
      * @param _sample_seq New value to be copied in member sample_seq
@@ -10065,7 +10065,7 @@ public:
     {
         return m_sample_seq;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -10101,7 +10101,7 @@ private:
  * @brief This class represents the structure WRITE_DATA_Payload_PackedSamples defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class WRITE_DATA_Payload_PackedSamples : public BaseObjectRequest
+class WRITE_DATA_Payload_PackedSamples final : public BaseObjectRequest
 {
 public:
 
@@ -10109,36 +10109,36 @@ public:
      * @brief Default constructor.
      */
     WRITE_DATA_Payload_PackedSamples();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~WRITE_DATA_Payload_PackedSamples();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object WRITE_DATA_Payload_PackedSamples that will be copied.
      */
     WRITE_DATA_Payload_PackedSamples(const WRITE_DATA_Payload_PackedSamples &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object WRITE_DATA_Payload_PackedSamples that will be copied.
      */
     WRITE_DATA_Payload_PackedSamples(WRITE_DATA_Payload_PackedSamples &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object WRITE_DATA_Payload_PackedSamples that will be copied.
      */
     WRITE_DATA_Payload_PackedSamples& operator=(const WRITE_DATA_Payload_PackedSamples &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object WRITE_DATA_Payload_PackedSamples that will be copied.
      */
     WRITE_DATA_Payload_PackedSamples& operator=(WRITE_DATA_Payload_PackedSamples &&x);
-    
+
     /*!
      * @brief This function copies the value in member packed_samples
      * @param _packed_samples New value to be copied in member packed_samples
@@ -10174,7 +10174,7 @@ public:
     {
         return m_packed_samples;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -10211,7 +10211,7 @@ private:
  * @brief This class represents the structure DATA_Payload_Data defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class DATA_Payload_Data : public BaseObjectRequest
+class DATA_Payload_Data final : public BaseObjectRequest
 {
 public:
 
@@ -10219,36 +10219,36 @@ public:
      * @brief Default constructor.
      */
     DATA_Payload_Data();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~DATA_Payload_Data();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object DATA_Payload_Data that will be copied.
      */
     DATA_Payload_Data(const DATA_Payload_Data &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object DATA_Payload_Data that will be copied.
      */
     DATA_Payload_Data(DATA_Payload_Data &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object DATA_Payload_Data that will be copied.
      */
     DATA_Payload_Data& operator=(const DATA_Payload_Data &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object DATA_Payload_Data that will be copied.
      */
     DATA_Payload_Data& operator=(DATA_Payload_Data &&x);
-    
+
     /*!
      * @brief This function copies the value in member data
      * @param _data New value to be copied in member data
@@ -10284,7 +10284,7 @@ public:
     {
         return m_data;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -10321,7 +10321,7 @@ private:
  * @brief This class represents the structure DATA_Payload_Sample defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class DATA_Payload_Sample : public BaseObjectRequest
+class DATA_Payload_Sample final : public BaseObjectRequest
 {
 public:
 
@@ -10329,36 +10329,36 @@ public:
      * @brief Default constructor.
      */
     DATA_Payload_Sample();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~DATA_Payload_Sample();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object DATA_Payload_Sample that will be copied.
      */
     DATA_Payload_Sample(const DATA_Payload_Sample &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object DATA_Payload_Sample that will be copied.
      */
     DATA_Payload_Sample(DATA_Payload_Sample &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object DATA_Payload_Sample that will be copied.
      */
     DATA_Payload_Sample& operator=(const DATA_Payload_Sample &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object DATA_Payload_Sample that will be copied.
      */
     DATA_Payload_Sample& operator=(DATA_Payload_Sample &&x);
-    
+
     /*!
      * @brief This function copies the value in member sample
      * @param _sample New value to be copied in member sample
@@ -10394,7 +10394,7 @@ public:
     {
         return m_sample;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -10431,7 +10431,7 @@ private:
  * @brief This class represents the structure DATA_Payload_DataSeq defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class DATA_Payload_DataSeq : public BaseObjectRequest
+class DATA_Payload_DataSeq final : public BaseObjectRequest
 {
 public:
 
@@ -10439,36 +10439,36 @@ public:
      * @brief Default constructor.
      */
     DATA_Payload_DataSeq();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~DATA_Payload_DataSeq();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object DATA_Payload_DataSeq that will be copied.
      */
     DATA_Payload_DataSeq(const DATA_Payload_DataSeq &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object DATA_Payload_DataSeq that will be copied.
      */
     DATA_Payload_DataSeq(DATA_Payload_DataSeq &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object DATA_Payload_DataSeq that will be copied.
      */
     DATA_Payload_DataSeq& operator=(const DATA_Payload_DataSeq &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object DATA_Payload_DataSeq that will be copied.
      */
     DATA_Payload_DataSeq& operator=(DATA_Payload_DataSeq &&x);
-    
+
     /*!
      * @brief This function copies the value in member data_seq
      * @param _data_seq New value to be copied in member data_seq
@@ -10504,7 +10504,7 @@ public:
     {
         return m_data_seq;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -10542,7 +10542,7 @@ private:
  * @brief This class represents the structure DATA_Payload_SampleSeq defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class DATA_Payload_SampleSeq : public BaseObjectRequest
+class DATA_Payload_SampleSeq final : public BaseObjectRequest
 {
 public:
 
@@ -10550,36 +10550,36 @@ public:
      * @brief Default constructor.
      */
     DATA_Payload_SampleSeq();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~DATA_Payload_SampleSeq();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object DATA_Payload_SampleSeq that will be copied.
      */
     DATA_Payload_SampleSeq(const DATA_Payload_SampleSeq &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object DATA_Payload_SampleSeq that will be copied.
      */
     DATA_Payload_SampleSeq(DATA_Payload_SampleSeq &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object DATA_Payload_SampleSeq that will be copied.
      */
     DATA_Payload_SampleSeq& operator=(const DATA_Payload_SampleSeq &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object DATA_Payload_SampleSeq that will be copied.
      */
     DATA_Payload_SampleSeq& operator=(DATA_Payload_SampleSeq &&x);
-    
+
     /*!
      * @brief This function copies the value in member sample_seq
      * @param _sample_seq New value to be copied in member sample_seq
@@ -10615,7 +10615,7 @@ public:
     {
         return m_sample_seq;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -10652,7 +10652,7 @@ private:
  * @brief This class represents the structure DATA_Payload_PackedSamples defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class DATA_Payload_PackedSamples : public BaseObjectRequest
+class DATA_Payload_PackedSamples final : public BaseObjectRequest
 {
 public:
 
@@ -10660,36 +10660,36 @@ public:
      * @brief Default constructor.
      */
     DATA_Payload_PackedSamples();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~DATA_Payload_PackedSamples();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object DATA_Payload_PackedSamples that will be copied.
      */
     DATA_Payload_PackedSamples(const DATA_Payload_PackedSamples &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object DATA_Payload_PackedSamples that will be copied.
      */
     DATA_Payload_PackedSamples(DATA_Payload_PackedSamples &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object DATA_Payload_PackedSamples that will be copied.
      */
     DATA_Payload_PackedSamples& operator=(const DATA_Payload_PackedSamples &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object DATA_Payload_PackedSamples that will be copied.
      */
     DATA_Payload_PackedSamples& operator=(DATA_Payload_PackedSamples &&x);
-    
+
     /*!
      * @brief This function copies the value in member packed_samples
      * @param _packed_samples New value to be copied in member packed_samples
@@ -10725,7 +10725,7 @@ public:
     {
         return m_packed_samples;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -10762,7 +10762,7 @@ private:
  * @brief This class represents the structure ACKNACK_Payload defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class ACKNACK_Payload
+class ACKNACK_Payload final
 {
 public:
 
@@ -10770,36 +10770,36 @@ public:
      * @brief Default constructor.
      */
     ACKNACK_Payload();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~ACKNACK_Payload();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object ACKNACK_Payload that will be copied.
      */
     ACKNACK_Payload(const ACKNACK_Payload &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object ACKNACK_Payload that will be copied.
      */
     ACKNACK_Payload(ACKNACK_Payload &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object ACKNACK_Payload that will be copied.
      */
     ACKNACK_Payload& operator=(const ACKNACK_Payload &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object ACKNACK_Payload that will be copied.
      */
     ACKNACK_Payload& operator=(ACKNACK_Payload &&x);
-    
+
     /*!
      * @brief This function sets a value in member first_unacked_seq_num
      * @param _first_unacked_seq_num New value for member first_unacked_seq_num
@@ -10889,7 +10889,7 @@ public:
     {
         return m_stream_id;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -10928,7 +10928,7 @@ private:
  * @brief This class represents the structure HEARTBEAT_Payload defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class HEARTBEAT_Payload
+class HEARTBEAT_Payload final
 {
 public:
 
@@ -10936,36 +10936,36 @@ public:
      * @brief Default constructor.
      */
     HEARTBEAT_Payload();
-    
+
     /*!
      * @brief Default destructor.
      */
     ~HEARTBEAT_Payload();
-    
+
     /*!
      * @brief Copy constructor.
      * @param x Reference to the object HEARTBEAT_Payload that will be copied.
      */
     HEARTBEAT_Payload(const HEARTBEAT_Payload &x);
-    
+
     /*!
      * @brief Move constructor.
      * @param x Reference to the object HEARTBEAT_Payload that will be copied.
      */
     HEARTBEAT_Payload(HEARTBEAT_Payload &&x);
-    
+
     /*!
      * @brief Copy assignment.
      * @param x Reference to the object HEARTBEAT_Payload that will be copied.
      */
     HEARTBEAT_Payload& operator=(const HEARTBEAT_Payload &x);
-    
+
     /*!
      * @brief Move assignment.
      * @param x Reference to the object HEARTBEAT_Payload that will be copied.
      */
     HEARTBEAT_Payload& operator=(HEARTBEAT_Payload &&x);
-    
+
     /*!
      * @brief This function sets a value in member first_unacked_seq_nr
      * @param _first_unacked_seq_nr New value for member first_unacked_seq_nr
@@ -11046,7 +11046,7 @@ public:
     {
         return m_stream_id;
     }
-    
+
     /*!
      * @brief This function returns the maximum serialized size of an object
      * depending on the buffer alignment.
@@ -11085,7 +11085,7 @@ private:
  * @brief This class represents the structure TIMESTAMP_Payload defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class TIMESTAMP_Payload
+class TIMESTAMP_Payload final
 {
 public:
 
@@ -11195,7 +11195,7 @@ private:
  * @brief This class represents the structure TIMESTAMP_Payload defined by the user in the IDL file.
  * @ingroup TYPESMOD
  */
-class TIMESTAMP_REPLY_Payload
+class TIMESTAMP_REPLY_Payload final
 {
 public:
 
@@ -11404,7 +11404,7 @@ enum SubmessageId : uint8_t
     * @brief This class represents the structure OBJK_Requester_Binary defined by the user in the IDL file.
     * @ingroup TEST
     */
-class OBJK_Requester_Binary
+class OBJK_Requester_Binary final
 {
 public:
 
@@ -11618,7 +11618,7 @@ private:
 * @brief This class represents the structure OBJK_Replier_Binary defined by the user in the IDL file.
 * @ingroup TEST
 */
-class OBJK_Replier_Binary
+class OBJK_Replier_Binary final
 {
 public:
 
@@ -11833,7 +11833,7 @@ eprosima::Optional<std::string> m_request_topic_name;
 
 typedef std::array<uint8_t, 12> GuidPrefix_t;
 
-class EntityId_t
+class EntityId_t final
 {
 public:
     EntityId_t() = default;
@@ -11901,7 +11901,7 @@ private:
     uint8_t m_entityKind;
 };
 
-class GUID_t
+class GUID_t final
 {
 public:
     GUID_t() = default;
@@ -11974,7 +11974,7 @@ private:
     EntityId_t m_entityId;
 };
 
-class SequenceNumber_t
+class SequenceNumber_t final
 {
 public:
     SequenceNumber_t() = default;
@@ -12032,7 +12032,7 @@ private:
     uint32_t m_low;
 };
 
-class SampleIdentity
+class SampleIdentity final
 {
 public:
     SampleIdentity() = default;
@@ -12101,5 +12101,11 @@ private:
 };
 
 } // namespace dds
+
+
+#ifdef UAGENT_LOGGER_PROFILE
+#include <spdlog/fmt/bundled/ostream.h>
+template <> struct fmt::formatter<dds::xrce::TransportAddress> : ostream_formatter {};
+#endif
 
 #endif //_UXR_AGENT_TYPES_XRCETYPES_HPP_

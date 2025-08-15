@@ -83,4 +83,9 @@ private:
 } // namespace uxr
 } // namespace eprosima
 
+#ifdef UAGENT_LOGGER_PROFILE
+#include <spdlog/fmt/bundled/ostream.h>
+template <> struct fmt::formatter<eprosima::uxr::IPv6EndPoint> : ostream_formatter {};
+#endif
+
 #endif // UXR_AGENT_TRANSPORT_ENDPOINT_IPV6_ENDPOINT_HPP_

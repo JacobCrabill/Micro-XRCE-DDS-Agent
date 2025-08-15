@@ -38,14 +38,14 @@ struct TCPv4ConnectionLinux : public TCPv4Connection
 
 extern template class Server<IPv4EndPoint>; // Explicit instantiation declaration.
 
-class TCPv4Agent : public Server<IPv4EndPoint>, public TCPServerBase<TCPv4ConnectionLinux>
+class TCPv4Agent final : public Server<IPv4EndPoint>, public TCPServerBase<TCPv4ConnectionLinux>
 {
 public:
     TCPv4Agent(
             uint16_t agent_port,
             Middleware::Kind middleware_kind);
 
-    ~TCPv4Agent() final;
+    ~TCPv4Agent();
 
 #ifdef UAGENT_DISCOVERY_PROFILE
     bool has_discovery() final { return true; }

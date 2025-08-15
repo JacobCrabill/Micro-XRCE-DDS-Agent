@@ -41,7 +41,7 @@ public:
             uint16_t port,
             Middleware::Kind middleware_kind);
 
-    ~UDPv4Agent() final;
+    ~UDPv4Agent();
 
 #ifdef UAGENT_DISCOVERY_PROFILE
     bool has_discovery() final { return true; }
